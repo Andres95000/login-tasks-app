@@ -17,6 +17,9 @@
             doloribus.
         </p>
 
+        {% if user.is_authenticated %}
+        {% else %}
+
         <div class="text-center">
             <a href="/signin/" class="btn btn-secondary">
                 Signin
@@ -25,6 +28,8 @@
                 Sign Up
             </a>
         </div>
+
+        {% endif %}
 
     </section>
 
