@@ -2,21 +2,33 @@
 
 {% block content %}
 
-    <h1>Create task</h1>
+<main class="container">
 
-    {{error}}
+    <div class="row">
 
-    <form method = "POST">
+        <div class="col-md-4 offset-md-4 mt-5">
+
+            <form method="POST" class="card card-body">
+
+                <h1>Create task</h1>
+
+                {{error}}
 
 
-        {% csrf_token %}
-        {{form.as_p}}
+                {% csrf_token %}
+                {{form.as_p}}
 
-        <button>
-            Save
-        </button>
-        
-    </form>
+                <button class="btn btn-primary">
+                    Save
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</main>
 
 
 {% endblock %}
