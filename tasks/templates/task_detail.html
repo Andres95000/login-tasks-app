@@ -21,7 +21,7 @@
 
             </form>
 
-            <div class="d-flex mt-2">
+            <div class="d-flex justify-content-between">
 
                 <form action="{% url 'complete_task' task.id %}" method="POST">
                     {% csrf_token %}
